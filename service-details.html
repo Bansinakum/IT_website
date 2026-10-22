@@ -1,0 +1,156 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Service Details | Nexora Technologies</title>
+  <meta name="description" content="Explore Nexora Technologies services and solutions.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header class="navbar" id="navbar">
+  <div class="nav-inner">
+    <a href="index.html" class="logo"><div class="logo-mark"><span></span></div>NEXORA</a>
+    <ul class="nav-links" id="navLinks">
+      <li><a href="index.html">Home</a></li><li><a href="about.html">About Us</a></li>
+      <li><a href="services.html">Services</a></li><li><a href="projects.html">Projects</a></li>
+      <li><a href="careers.html">Careers</a></li><li><a href="blog.html">Blog</a></li><li><a href="contact.html">Contact</a></li>
+    </ul>
+    <a href="contact.html" class="nav-cta">Let's Talk →</a>
+    <button class="menu-btn" id="menuBtn" aria-label="Open menu">☰</button>
+  </div>
+</header>
+
+<main>
+  <section class="service-detail-hero">
+    <div class="service-detail-glow"></div>
+    <div class="container service-detail-content">
+      <a class="back-link" href="services.html">← Back to all services</a>
+      <div class="section-label" id="serviceEyebrow">NEXORA SERVICES</div>
+      <h1 class="service-detail-title" id="serviceTitle">Service Details</h1>
+      <p class="service-detail-intro" id="serviceIntro"></p>
+      <div class="service-detail-actions">
+        <a class="btn btn-primary" href="contact.html">Discuss your project →</a>
+        <a class="btn btn-outline" href="services.html">Explore other services</a>
+      </div>
+    </div>
+  </section>
+
+  <section class="section service-detail-section">
+    <div class="container">
+      <div class="service-detail-layout">
+        <div>
+          <div class="section-label">OVERVIEW</div>
+          <h2 class="section-title" id="overviewTitle">What we deliver</h2>
+          <p class="service-detail-copy" id="serviceOverview"></p>
+        </div>
+        <aside class="service-detail-panel">
+          <div class="section-label">WHAT'S INCLUDED</div>
+          <ul class="service-feature-list" id="serviceFeatures"></ul>
+        </aside>
+      </div>
+    </div>
+  </section>
+
+  <section class="section service-detail-section service-detail-alt">
+    <div class="container">
+      <div class="section-head">
+        <div class="section-label">OUR APPROACH</div>
+        <h2 class="section-title">A clear process, from idea to launch.</h2>
+        <p class="section-description">We keep every stage collaborative, transparent and focused on your goals.</p>
+      </div>
+      <div class="service-steps-grid" id="serviceSteps"></div>
+    </div>
+  </section>
+
+  <section class="section service-detail-section">
+    <div class="container service-detail-cta">
+      <div>
+        <div class="section-label">READY TO GET STARTED?</div>
+        <h2 class="section-title" id="serviceCtaTitle">Let's build something great.</h2>
+        <p class="section-description">Tell us what you want to achieve and we'll help you plan the next steps.</p>
+      </div>
+      <a class="btn btn-primary" href="contact.html">Contact Nexora →</a>
+    </div>
+  </section>
+</main>
+
+<footer>
+  <div class="container">
+    <div class="footer-grid">
+      <div class="footer-brand"><a href="index.html" class="logo"><div class="logo-mark"><span></span></div>NEXORA</a><p>We build modern digital products and technology solutions that help ambitious businesses grow.</p></div>
+      <div class="footer-col"><h4>Company</h4><a href="about.html">About Us</a><a href="careers.html">Careers</a><a href="blog.html">Blog</a><a href="contact.html">Contact</a></div>
+      <div class="footer-col"><h4>Services</h4><a href="service-details.html?service=web-development">Web Development</a><a href="service-details.html?service=mobile-apps">Mobile Apps</a><a href="service-details.html?service=custom-software">Custom Software</a><a href="service-details.html?service=ui-ux-design">UI / UX Design</a></div>
+      <div class="footer-col"><h4>Explore</h4><a href="projects.html">Projects</a><a href="technology-overview.html?tech=react">Technologies</a><a href="contact.html">Start a project</a></div>
+    </div>
+    <div class="copyright"><span>© 2026 Nexora Technologies. All rights reserved.</span><span>Privacy Policy · Terms</span></div>
+  </div>
+</footer>
+<script>
+const serviceData = {
+  "web-development": {
+    title:"Web Development", intro:"Fast, accessible and responsive websites and web applications built around your business goals.",
+    overview:"We design and develop digital experiences that work smoothly across mobile, tablet and desktop. From company websites and customer portals to eCommerce stores and custom web applications, we focus on performance, usability, security and maintainability.",
+    features:["Responsive website design and development","Business websites, portals and landing pages","eCommerce and payment-flow integration","Frontend and backend development","Performance, accessibility and SEO foundations","Testing, launch and ongoing improvements"],
+    steps:[["01","Discover","We understand your audience, requirements and success measures."],["02","Design","We map the pages and create a clear, user-friendly interface."],["03","Build & test","We develop the experience and test it across common devices."],["04","Launch","We publish the site and help plan future improvements."]]
+  },
+  "mobile-apps": {
+    title:"Mobile Apps", intro:"Useful mobile experiences for Android, iOS and cross-platform products.",
+    overview:"We help turn an app idea into a practical mobile product. Our process considers real-world user needs, intuitive navigation, reliability and a maintainable technical foundation, whether you need a new customer-facing app or an internal business tool.",
+    features:["Product planning and feature definition","Android and iOS app development","Cross-platform app solutions","API and backend integration","User-friendly navigation and interfaces","Device testing, release support and iteration"],
+    steps:[["01","Define","Clarify users, core features and the first release scope."],["02","Prototype","Plan key screens and test the user journey."],["03","Develop","Build features and connect the app to required services."],["04","Release","Test, prepare the release and improve from feedback."]]
+  },
+  "custom-software": {
+    title:"Custom Software", intro:"Purpose-built software that fits your workflows instead of forcing your team to adapt.",
+    overview:"Every business has different processes. We can plan and build tailored tools that reduce repetitive work, organize information and help teams make better decisions. Solutions are designed around your requirements, integrations and future growth.",
+    features:["Requirements analysis and solution planning","Internal dashboards and admin panels","Workflow and business-process automation","Database and API integration","Role-based access and reporting","Documentation, testing and support planning"],
+    steps:[["01","Understand","Map the current workflow and identify the main pain points."],["02","Plan","Agree on features, data, access and integrations."],["03","Implement","Build the software in manageable, testable stages."],["04","Improve","Gather feedback and refine the solution over time."]]
+  },
+  "ui-ux-design": {
+    title:"UI / UX Design", intro:"Clear, attractive and accessible digital experiences designed around the people who use them.",
+    overview:"Great design combines user needs with business goals. We organize information, simplify key journeys and create a consistent visual system so that websites and apps are easier to understand, navigate and use.",
+    features:["User and audience research","Information architecture and user flows","Wireframes and interactive prototypes","Visual interface and design systems","Responsive and accessibility-aware layouts","Usability review and design handoff"],
+    steps:[["01","Research","Learn about users, needs and the product context."],["02","Structure","Organize content and map the most important journeys."],["03","Design","Create screen layouts, visual styles and prototypes."],["04","Validate","Review the experience and refine based on feedback."]]
+  },
+  "cloud-devops": {
+    title:"Cloud & DevOps", intro:"Reliable deployment workflows and cloud foundations that help your product scale with confidence.",
+    overview:"We help teams make releases more consistent and operations easier to monitor. From deployment automation to environment setup and observability, the focus is on dependable delivery, security-conscious configuration and clear operational practices.",
+    features:["Cloud environment planning","Deployment and CI/CD workflow setup","Containerization and environment consistency","Monitoring, logs and alerts","Backup and reliability planning","Operational documentation and optimization"],
+    steps:[["01","Assess","Review the application, infrastructure and release process."],["02","Design","Choose an appropriate environment and deployment approach."],["03","Automate","Set up repeatable builds, deployments and monitoring."],["04","Optimize","Review reliability, cost and operational feedback."]]
+  },
+  "ai-automation": {
+    title:"AI & Automation", intro:"Practical AI-enabled features and automation that help people work smarter.",
+    overview:"We identify repetitive tasks and information-heavy workflows where automation may help. Solutions are planned around clear use cases, appropriate data handling, human review where needed and measurable outcomes rather than adding AI without a purpose.",
+    features:["Use-case discovery and feasibility planning","Workflow and task automation","AI-powered search and content assistance","Chatbot and assistant experiences","Integration with existing tools and data","Evaluation, safeguards and iteration"],
+    steps:[["01","Identify","Select a specific workflow and define what success means."],["02","Evaluate","Review data, feasibility, risks and human oversight needs."],["03","Prototype","Build a focused proof of concept and test it."],["04","Refine","Measure results and improve before wider adoption."]]
+  }
+};
+const params = new URLSearchParams(window.location.search);
+const requestedService = params.get("service");
+const data = serviceData[requestedService];
+if (!data) {
+  document.getElementById("serviceTitle").textContent = "Service not found";
+  document.getElementById("serviceIntro").textContent = "Please choose a service from our Services page to see its details.";
+  document.getElementById("serviceOverview").textContent = "Browse our services to find the right solution for your project.";
+  document.getElementById("overviewTitle").textContent = "Explore our services";
+  document.getElementById("serviceFeatures").innerHTML = '<li><a href="services.html">View all services →</a></li>';
+  document.getElementById("serviceSteps").innerHTML = "";
+} else {
+  document.title = data.title + " | Nexora Technologies";
+  document.getElementById("serviceTitle").textContent = data.title;
+  document.getElementById("serviceIntro").textContent = data.intro;
+  document.getElementById("serviceOverview").textContent = data.overview;
+  document.getElementById("serviceCtaTitle").textContent = "Let's talk about " + data.title + ".";
+  document.getElementById("serviceFeatures").innerHTML = data.features.map(item => '<li><span class="feature-check">✓</span><span>' + item + '</span></li>').join("");
+  document.getElementById("serviceSteps").innerHTML = data.steps.map(step => '<article class="service-step"><div class="service-step-number">' + step[0] + '</div><h3>' + step[1] + '</h3><p>' + step[2] + '</p></article>').join("");
+}
+const navbar=document.getElementById("navbar");
+if(navbar) window.addEventListener("scroll",()=>navbar.classList.toggle("scrolled",window.scrollY>30));
+const menuBtn=document.getElementById("menuBtn"), navLinks=document.getElementById("navLinks");
+if(menuBtn&&navLinks){menuBtn.addEventListener("click",()=>{navLinks.classList.toggle("mobile-open");menuBtn.textContent=navLinks.classList.contains("mobile-open")?"×":"☰";});navLinks.querySelectorAll("a").forEach(a=>a.addEventListener("click",()=>{navLinks.classList.remove("mobile-open");menuBtn.textContent="☰";}));}
+</script>
+</body>
+</html>
